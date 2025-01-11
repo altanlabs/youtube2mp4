@@ -22,7 +22,7 @@ export default function FAQsPage() {
       <h1 className="text-4xl font-bold text-center mb-8">Frequently Asked Questions</h1>
       <div className="max-w-2xl mx-auto">
         {faqs.map((faq, index) => (
-          <Accordion key={index} title={faq.question}>
+          <Accordion key={index} type="single" title={faq.question}>
             <p className="text-gray-300">{faq.answer}</p>
           </Accordion>
         ))}
